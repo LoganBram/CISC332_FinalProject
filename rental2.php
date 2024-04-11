@@ -16,6 +16,9 @@
     <title>Web Design Mastery | Holux</title>
   </head>
   <body>
+  <?php
+    include 'connectdb.php';
+?>
     <nav>
       <div class="nav__bar">
         <div class="nav__logo"><a href="#">Real Estate</a></div>
@@ -77,64 +80,7 @@
       </div>
     </section>
 <div class="property-container">
-    <div class="property-card">
-        <img src="images/aboutus.jpg" alt="Property Image" class="property-image">
-        <div class="property-details">
-            <h2>House</h2>
-            <p><strong>ID:</strong> 001</p>
-            <p><strong>Price:</strong> $950,000</p>
-            <p><strong>Owner:</strong> Jane Doe</p>
-            <p><strong>Manager:</strong> John Smith</p>
-        </div>
-    </div>
-    <div class="property-card">
-        <img src="images/aboutus.jpg" alt="Property Image" class="property-image">
-        <div class="property-details">
-            <h2>House</h2>
-            <p><strong>ID:</strong> 001</p>
-            <p><strong>Price:</strong> $950,000</p>
-            <p><strong>Owner:</strong> Jane Doe</p>
-            <p><strong>Manager:</strong> John Smith</p>
-        </div>
-    </div>
-    <div class="property-card">
-        <img src="images/aboutus.jpg" alt="Property Image" class="property-image">
-        <div class="property-details">
-            <h2>House</h2>
-            <p><strong>ID:</strong> 001</p>
-            <p><strong>Price:</strong> $950,000</p>
-            <p><strong>Owner:</strong> Jane Doe</p>
-            <p><strong>Manager:</strong> John Smith</p>
-        </div>
-    </div>
-    <div class="property-card">
-        <img src="images/aboutus.jpg" alt="Property Image" class="property-image">
-        <div class="property-details">
-            <h2>House</h2>
-            <p><strong>ID:</strong> 001</p>
-            <p><strong>Price:</strong> $950,000</p>
-            <p><strong>Owner:</strong> Jane Doe</p>
-            <p><strong>Manager:</strong> John Smith</p>
-        </div>
-    </div>
-    <div class="property-card">
-        <img src="images/aboutus.jpg" alt="Property Image" class="property-image">
-        <div class="property-details">
-            <h2>House</h2>
-            <p><strong>ID:</strong> 001</p>
-            <p><strong>Price:</strong> $950,000</p>
-            <p><strong>Owner:</strong> Jane Doe</p>
-            <p><strong>Manager:</strong> John Smith</p>
-        </div>
-    </div>
-    <div class="property-card">
-        <img src="images/aboutus.jpg" alt="Property Image" class="property-image">
-        <div class="property-details">
-            <h2>House</h2>
-            <p><strong>ID:</strong> 001</p>
-            <p><strong>Price:</strong> $950,000</p>
-            <p><strong>Owner:</strong> Jane Doe</p>
-            <p><strong>Manager:</strong> John Smith</p>
-        </div>
-    </div>
+    <?php 
+    include 'cards.php';
+    ?>
 </div>

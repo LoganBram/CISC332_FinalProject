@@ -16,6 +16,9 @@
     <title>Web Design Mastery | Holux</title>
   </head>
   <body>
+  <?php
+    include 'connectdb.php';
+?>
     <nav>
       <div class="nav__bar">
         <div class="nav__logo"><a href="#">Real Estate</a></div>
@@ -37,91 +40,10 @@
 
 
     <div class="rentalgroup-wrap">
+        <?php
+        include 'showmembers.php';
 
-        <div class="rental-group">
-            <h2>Group 1</h2>
-            <div class="group-info">
-                <div class="members">
-                    <strong>Members:</strong> John Doe, Jane Doe, 
-                </div>
-                <div class="preferences">
-                    <strong>Preferences:</strong>
-                        <div class="preference-items">
-                            <div class="preference-item">House <span class="delete-btn">&#215;</span></div>
-                            <div class="preference-item">Table <span class="delete-btn">&#215;</span></div>
-                            <div class="preference-item">Near Park <span class="delete-btn">&#215;</span></div>
-                        </div>
-                </div>
-            </div>
-                <div class="group-actions">
-                    <button class="join-group-btn">Join Group</button>
-                    <button class="add-preference-btn">Add Preference</button>
-                </div>
-        </div>
-
-
-        <div class="rental-group">
-            <h2>Group 2</h2>
-            <div class="group-info">
-                <div class="members">
-                    <strong>Members:</strong> John Doe, Jane Doe, 
-                </div>
-                <div class="preferences">
-                    <strong>Preferences:</strong>
-                        <div class="preference-items">
-                            <div class="preference-item">House <span class="delete-btn">&#215;</span></div>
-                            <div class="preference-item">Table <span class="delete-btn">&#215;</span></div>
-                            <div class="preference-item">Near Park <span class="delete-btn">&#215;</span></div>
-                        </div>
-                </div>
-            </div>
-                <div class="group-actions">
-                    <button class="join-group-btn">Join Group</button>
-                    <button class="add-preference-btn">Add Preference</button>
-                </div>
-        </div>
-        <div class="rental-group">
-            <h2>Group 3</h2>
-            <div class="group-info">
-                <div class="members">
-                    <strong>Members:</strong> John Doe, Jane Doe, 
-                </div>
-                <div class="preferences">
-                    <strong>Preferences:</strong>
-                        <div class="preference-items">
-                            <div class="preference-item">House <span class="delete-btn">&#215;</span></div>
-                            <div class="preference-item">Table <span class="delete-btn">&#215;</span></div>
-                            <div class="preference-item">Near Park <span class="delete-btn">&#215;</span></div>
-                        </div>
-                </div>
-            </div>
-                <div class="group-actions">
-                    <button class="join-group-btn">Join Group</button>
-                    <button class="add-preference-btn">Add Preference</button>
-                </div>
-        </div>
-
-        <div class="rental-group">
-            <h2>Group 4</h2>
-            <div class="group-info">
-                <div class="members">
-                    <strong>Members:</strong> John Doe, Jane Doe, 
-                </div>
-                <div class="preferences">
-                    <strong>Preferences:</strong>
-                        <div class="preference-items">
-                            <div class="preference-item">House <span class="delete-btn">&#215;</span></div>
-                            <div class="preference-item">Table <span class="delete-btn">&#215;</span></div>
-                            <div class="preference-item">Near Park <span class="delete-btn">&#215;</span></div>
-                        </div>
-                </div>
-            </div>
-                <div class="group-actions">
-                    <button class="join-group-btn">Join Group</button>
-                    <button class="add-preference-btn">Add Preference</button>
-                </div>
-        </div>
-
+        ?>
     </div>
     
 
