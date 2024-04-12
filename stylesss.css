@@ -214,6 +214,8 @@ body {
   padding: 5rem 0;
 }
 
+
+
 .project__header {
   max-width: var(--max-width);
   margin-inline: auto;
@@ -255,6 +257,8 @@ body {
   position: relative;
   padding-bottom: 3rem;
 }
+
+
 
 .project__content {
   position: absolute;
@@ -428,6 +432,8 @@ body {
   color: var(--white);
   text-align: center;
 }
+
+
 
 @media (width < 1200px) {
   .nav__btns {

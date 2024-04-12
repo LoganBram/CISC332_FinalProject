@@ -44,7 +44,7 @@
            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
           </p>
           <div class="header__btns">
-            <button class="btn btn__secondary">Join Group</button>
+            <button class="btn btn__secondary"><a href="Joingroup.php">Join Group</a></button>
             
           </div>
         </div>
