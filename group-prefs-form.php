@@ -14,6 +14,21 @@
     //get the group id from main join group page
         $groupID =$_POST['groupID'];
     ?>
+    <nav>
+        <div class="nav__bar">
+            <div class="nav__logo"><a href="#">Real Estate</a></div>
+            <ul class="nav__links">
+                <li class="link"><a href="rental.php">HOME</a></li>
+                <li class="link"><a href="Joingroup.php">RENTAL GROUPS</a></li>
+                <li class="link"><a href="managers.php">MANAGERS</a></li>
+                
+            </ul>
+            <div class="nav__btns">
+                <button class="login">Log In</button>
+                <button class="register">Register Now</button>
+            </div>
+        </div>
+    </nav>
     <div class="preferences-form-container">
         <form action="submit_preferences.php" method="post" class="preferences-update-form">
             <h2>Update Your Preferences</h2>

@@ -417,46 +417,46 @@ tr:nth-child(even) {
 
 /* manager page */
 .form-container {
-  background-color: #ffffff;
+  background-color: #fff;
+  width: 50%;
+  max-width: 600px;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 350px; /* Adjusted width to fit content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
-  font-size: 1rem;
-  color: #333;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #666;
 }
 
 .form-group select {
   width: 100%;
-  padding: 10px 8px;
+  padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #f8f8f8;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
 }
 
 .btn {
+  display: block;
   width: 100%;
-  padding: 10px 0;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: var(--primary-color);
+  padding: 10px;
+  background-color: #5d5fef;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
-  background-color: var(--primary-color-dark);
+  background-color: #4b4dbf;
 }

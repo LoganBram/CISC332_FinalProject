@@ -7,6 +7,7 @@
     <title>Join Group</title>
 </head>
 <body>
+    
     <div class="join-group-flexbox">
         <div class="join-group-container">
             <form action="submit_joingroup.php" method="post" class="join-group-form">
