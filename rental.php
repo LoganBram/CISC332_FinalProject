@@ -17,8 +17,8 @@
         <div class="nav__logo"><a href="#">Real Estate</a></div>
         <ul class="nav__links">
           <li class="link"><a href="rental.php">HOME</a></li>
-          <li class="link"><a href="Joingroup.php">JOIN GROUP</a></li>
-          <li class="link"><a href="#">PLACEHOLDER</a></li>
+          <li class="link"><a href="Joingroup.php">RENTAL GROUPS</a></li>
+          <li class="link"><a href="#">MANAGERS</a></li>
           
         </ul>
         <div class="nav__btns">
