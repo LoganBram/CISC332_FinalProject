@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesss.css">
+    <link rel="stylesheet" href="joingroup-page.css">
     <title>Join Group</title>
 </head>
 <body>
     <div class="join-group-container">
-        <form action="userjoinsgroup.php" method="post" class="join-group-form">
+        <form action="submit_joingroup.php" method="post" class="join-group-form">
             <h2>Join Group</h2>
             <div class="input-group">
                 <label for="phonenumber">Phone Number:</label>
