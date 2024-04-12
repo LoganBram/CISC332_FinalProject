@@ -86,7 +86,6 @@
             $aptavg = $resultApt->fetch()['avgAptCost'];
             $roomavg = $resultRoom->fetch()['avgRoomCost'];
             
-
             echo "<tr><td>" . $houseavg . "</td><td>" . $aptavg . "</td><td>" . $roomavg . "</td></tr>";
 
         ?>
