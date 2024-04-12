@@ -29,8 +29,8 @@
           
         </ul>
         <div class="nav__btns">
-          <button class="btn btn__primary">Log In</button>
-          <button class="btn btn__secondary">Register Now</button>
+          <button class="login">Log In</button>
+          <button class="register">Register Now</button>
         </div>
       </div>
 

@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --primary-color: #5d5fef;
-  --primary-color-dark: #4b4dbf;
-  --secondary-color: #131516;
-  --text-dark: #333333;
-  --text-light: #767268;
-  --extra-light: #f8f8f8;
-  --white: #ffffff;
   --max-width: 1200px;
 }
 
@@ -22,7 +15,7 @@ body {
 }
 
 .section__container {
-  max-width: var(--max-width);
+  max-width: 1200px;
   padding: 5rem 1rem;
   margin: auto;
 }
@@ -31,41 +24,45 @@ body {
   margin-bottom: 5px;
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: #333333;
 }
 
 .section__subheader {
-  color: var(--text-light);
+  color: #333333;
 }
 
-.btn {
+
+.login {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   outline: none;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.btn__primary {
-  color: var(--text-dark);
-  border: 2px solid var(--text-light);
+  color: #333333;
+  border: 2px solid #333333;
   background-color: transparent;
 }
 
-.btn__secondary {
+.register {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
   color: var(--white);
-  border: 2px solid var(--primary-color);
-  background-color: var(--primary-color);
+  border: 2px solid #5d5fef;
+  background-color: #5d5fef;
 }
 
-.btn__primary:hover {
+.login:hover {
   background-color: var(--extra-light);
 }
 
-.btn__secondary:hover {
-  background-color: var(--primary-color-dark);
-  border-color: var(--primary-color-dark);
+.register:hover {
+  background-color: #4b4dbf;
+  border-color: #4b4dbf;
 }
 
 img {
@@ -79,7 +76,7 @@ a {
 
 
 .nav__bar {
-  max-width: var(--max-width);
+  max-width: 1200px;
   margin: auto;
   padding: 2rem 1rem;
   display: flex;
@@ -94,7 +91,7 @@ a {
 .nav__logo a {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--primary-color);
+  color: #5d5fef;
 }
 
 .nav__links {
@@ -107,11 +104,11 @@ a {
 .link a {
   padding: 5px;
   font-weight: 600;
-  color: var(--text-dark);
+  color: #333333;
 }
 
 .link a:hover {
-  color: var(--primary-color);
+  color: #5d5fef;
 }
 
 .nav__btns {
@@ -130,8 +127,8 @@ a {
   display: grid;
   grid-template-columns:
     minmax(0, 1fr)
-    minmax(0, calc(var(--max-width) / 2))
-    minmax(0, calc(var(--max-width) / 2))
+    minmax(0, calc(1200px / 2))
+    minmax(0, calc(1200px / 2))
     minmax(0, 1fr);
 }
 
@@ -145,11 +142,11 @@ a {
   font-size: 4rem;
   font-weight: 600;
   line-height: 5rem;
-  color: var(--text-dark);
+  color: #333333;
 }
 .header__content p {
   margin-bottom: 2rem;
-  color: var(--text-light);
+  color: #333333;
 }
 
 
@@ -178,7 +175,7 @@ a {
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 400;
-  color: var(--primary-color);
+  color: #5d5fef;
 }
 
 
