@@ -8,6 +8,9 @@
 </head>
 <body>
     <?php
+    include 'connectdb.php';
+?>
+    <?php
         // Default the group ID to an empty string if it's not set
         $groupID =$_POST['groupID'];
     ?>
