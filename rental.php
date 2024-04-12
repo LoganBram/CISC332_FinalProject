@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylesss.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Web Design Mastery | Holux</title>
   </head>

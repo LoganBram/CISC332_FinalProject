@@ -11,7 +11,7 @@
     include 'connectdb.php';
 ?>
     <?php
-        // Default the group ID to an empty string if it's not set
+    //get the group id from main join group page
         $groupID =$_POST['groupID'];
     ?>
     <div class="preferences-form-container">

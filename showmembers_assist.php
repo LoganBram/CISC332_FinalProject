@@ -37,10 +37,13 @@ foreach ($groups as $group) {
     // Group actions with dynamically generated form
     echo "<div class='group-actions'>";
     echo "<form action='group_prefs.php' method='post'>";
-    echo "<input type='hidden' name='groupID' value='" . $group['code'] . "'>";
-    echo "<button type='submit' class='edit-preferences-btn'>Edit Preferences</button>";
+        echo "<input type='hidden' name='groupID' value='" . $group['code'] . "'>";
+        echo "<button type='submit' class='edit-preferences-btn'>Edit Preferences</button>";
     echo "</form>";
-    echo "<button class='join-group-btn'>Join Group</button>";
+    echo "<form action = 'userjoinsgroup.php' method = 'post'>";
+        echo "<input type='hidden' name='groupID' value='" . $group['code'] . "'>";
+        echo "<button type='submit' class='join-group-btn'>Join Group</button>";
+    echo "</form>";
     echo "</div>"; // Close group-actions
     echo "</div>"; // Close group-info
     echo "</div>"; // Close rental-group div
