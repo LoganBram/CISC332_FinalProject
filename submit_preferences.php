@@ -1,4 +1,6 @@
 <?php
+
+    
     // Assuming $connection is your PDO database connection
     include 'connectdb.php';
     // Receive preferences data from POST
@@ -10,7 +12,7 @@
     $cost = $_POST["cost"];
     $accessibility = $_POST["accessibility"];
     $type = $_POST["type"];
-
+try{
     // Create a query to update the RentalGroup
     $query = 'UPDATE RentalGroup SET 
               bedrooms="' . $bedrooms . '",
@@ -28,10 +30,14 @@
     // Check if the update was successful
     if ($numRows > 0) {
         echo "Preferences updated successfully!";
+        echo "<br><a href='Joingroup.php'>Back to Groups</a>";
     } else {
         echo "No changes were made or group not found.";
     }
-
+    } catch (PDOException $e) {
+        echo "Error!: " . $e->getMessage() . "<br/>";
+        die();
+    }
     // Close the connection
     $connection = null;
 ?>

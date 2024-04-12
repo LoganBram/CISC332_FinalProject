@@ -25,7 +25,7 @@
         <ul class="nav__links">
           <li class="link"><a href="rental.php">HOME</a></li>
           <li class="link"><a href="Joingroup.php">JOIN GROUP</a></li>
-          <li class="link"><a href="group_prefs.php">GROUP PEFERENCES</a></li>
+          <li class="link"><a href="#">PLACEHOLDER</a></li>
           
         </ul>
         <div class="nav__btns">
@@ -41,7 +41,7 @@
 
     <div class="rentalgroup-wrap">
         <?php
-        include 'showmembers_assist.php';
+        include 'assist_displaygroups.php';
         ?>
         <form action="">
           

@@ -22,6 +22,7 @@ try {
     $result = $connection->exec($query);
     if ($result) {
         echo "You have successfully joined the group!";
+        echo "<br><a href='Joingroup.php'>Back to Groups</a>";
     } else {
         echo "Failed to join the group or no changes made.";
     }

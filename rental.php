@@ -25,7 +25,7 @@
         <ul class="nav__links">
           <li class="link"><a href="rental.php">HOME</a></li>
           <li class="link"><a href="Joingroup.php">JOIN GROUP</a></li>
-          <li class="link"><a href="group_prefs.php">GROUP PREFERENCES</a></li>
+          <li class="link"><a href="#">PLACEHOLDER</a></li>
           
         </ul>
         <div class="nav__btns">
@@ -67,20 +67,38 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
-        <div class="about__grid">
-        <table>
-            <tr><th>House</th><th>Apartment</th><th>Room</th></tr>
-            <tr><td>$234</td><td>$234</td><td>$234</td></tr>
-        <!-- SELECT AVG(cost) FROM `property` WHERE type = 'House';  ?-->
-        <!-- SELECT AVG(cost) FROM `property` WHERE type = 'Apartment'; ? -->
-        <!-- SELECT AVG(cost) FROM `property` WHERE type = 'Room';  ?-->
-        </table>
+       
+          <div class="about__grid">
+            <table>
+                <tr><th>House</th><th>Apartment</th><th>Room</th></tr>
+                <?php
+            $queryHouse = "SELECT AVG(p.cost) AS avgHouseCost
+            FROM Property p
+            JOIN House h ON p.id = h.property_id;
+            ";
+            $queryApt = "SELECT AVG(p.cost) AS avgAptCost FROM Property p JOIN Apartment a ON p.id = a.property_id";
+            $queryRoom = "SELECT AVG(p.cost) AS avgRoomCost FROM Property p JOIN Room r ON p.id = r.property_id";
+
+            $resultHouse = $connection->query($queryHouse);
+            $resultApt = $connection->query($queryApt);
+            $resultRoom = $connection->query($queryRoom);
+            $houseavg = $resultHouse->fetch()['avgHouseCost'];
+            $aptavg = $resultApt->fetch()['avgAptCost'];
+            $roomavg = $resultRoom->fetch()['avgRoomCost'];
+            
+
+            echo "<tr><td>" . $houseavg . "</td><td>" . $aptavg . "</td><td>" . $roomavg . "</td></tr>";
+
+        ?>
+               
+           
+            </table>
           </div>
         </div>
       </div>
     </section>
 <div class="property-container">
     <?php 
-    include 'cards_assist.php';
+    include 'assist_propertycards.php';
     ?>
 </div>
