@@ -3,14 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    
     <link rel="stylesheet" href="stylesss.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Web Design Mastery | Holux</title>
@@ -43,10 +36,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
           </p>
-          <div class="header__btns">
-            <button class="btn btn__secondary"><a href="Joingroup.php">Join Group</a></button>
-            
-          </div>
+          
         </div>
         <div class="header__image">
           <img src="images/FrontpageHeader.png" alt="header" />
@@ -68,7 +58,7 @@
            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
             
-          <div class="about__grid">
+          <div class="averages__grid">
           <h1>Rent Averages</h1>
             <table>
                 <tr><th>House</th><th>Apartment</th><th>Room</th></tr>
