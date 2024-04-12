@@ -530,6 +530,9 @@ body {
 }
 
 
+
+
+
 /* Join group */
 
 .rentalgroup-wrap{
@@ -595,11 +598,6 @@ strong {
 }
 
 
-
-
-
-
-
 .group-actions {
     display: flex;
     flex-direction: column;
@@ -623,4 +621,54 @@ strong {
 .add-preference-btn {
     background-color: #5d5fef;
     color: white;
+}
+
+
+/* edit preferences page */
+
+/* Specific styles for the preferences update form */
+.preferences-form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.preferences-update-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.preferences-input-group {
+  margin-bottom: 15px;
+}
+
+.preferences-text-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.preferences-submit-btn {
+  background-color: #5d5fef;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.preferences-submit-btn:hover {
+  background-color: #4b4dbf;
+}
+
+label {
+  font-weight: bold;
 }

@@ -9,7 +9,7 @@ foreach ($groups as $group) {
     echo "<div class='rental-group'>";
     echo "<h2>Group " . $group['code'] . "</h2>"; // Dynamically displaying the group code
     echo "<div class='group-info'>";
-    
+
     // Preferences section with delete button for each preference
     echo "<div class='preferences'><strong>Preferences:</strong>";
     echo "<div class='preference-items'>";
@@ -29,18 +29,21 @@ foreach ($groups as $group) {
     $members = $connection->query($memberQuery);
 
     foreach ($members as $member) {
-        echo "<span>" . " " . $member['fname'] . " " . $member['lname'] . "," . "</span>";
+        echo "<span>" . $member['fname'] . " " . $member['lname'] . "," . "</span>";
     }
 
-    echo "</div>"; // Close members div
+    echo "</div>";
 
-    // Group actions
+    // Group actions with dynamically generated form
     echo "<div class='group-actions'>";
+    echo "<form action='group_prefs.php' method='post'>";
+    echo "<input type='hidden' name='groupID' value='" . $group['code'] . "'>";
+    echo "<button type='submit' class='edit-preferences-btn'>Edit Preferences</button>";
+    echo "</form>";
     echo "<button class='join-group-btn'>Join Group</button>";
-    echo "<button class='add-preference-btn'>Add Preference</button>";
     echo "</div>"; // Close group-actions
     echo "</div>"; // Close group-info
     echo "</div>"; // Close rental-group div
 }
-
 ?>
+

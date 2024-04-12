@@ -11,9 +11,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stylesss.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Web Design Mastery | Holux</title>
+    <title>yay</title>
   </head>
   <body>
   <?php
@@ -23,9 +23,9 @@
       <div class="nav__bar">
         <div class="nav__logo"><a href="#">Real Estate</a></div>
         <ul class="nav__links">
-          <li class="link"><a href="rental2.php">HOME</a></li>
+          <li class="link"><a href="rental.php">HOME</a></li>
           <li class="link"><a href="Joingroup.php">JOIN GROUP</a></li>
-          <li class="link"><a href="#project">PLACEHOLDER</a></li>
+          <li class="link"><a href="group_prefs.php">GROUP PEFERENCES</a></li>
           
         </ul>
         <div class="nav__btns">
@@ -41,7 +41,7 @@
 
     <div class="rentalgroup-wrap">
         <?php
-        include 'showmembers.php';
+        include 'showmembers_assist.php';
 
         ?>
     </div>
