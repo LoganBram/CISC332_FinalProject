@@ -67,8 +67,9 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </p>
-       
+            
           <div class="about__grid">
+          <h1>Rent Averages</h1>
             <table>
                 <tr><th>House</th><th>Apartment</th><th>Room</th></tr>
                 <?php
@@ -82,9 +83,9 @@
             $resultHouse = $connection->query($queryHouse);
             $resultApt = $connection->query($queryApt);
             $resultRoom = $connection->query($queryRoom);
-            $houseavg = $resultHouse->fetch()['avgHouseCost'];
-            $aptavg = $resultApt->fetch()['avgAptCost'];
-            $roomavg = $resultRoom->fetch()['avgRoomCost'];
+            $houseavg = round($resultHouse->fetch()['avgHouseCost']);
+            $aptavg = round($resultApt->fetch()['avgAptCost']);
+            $roomavg = round($resultRoom->fetch()['avgRoomCost']);
             
             echo "<tr><td>" . $houseavg . "</td><td>" . $aptavg . "</td><td>" . $roomavg . "</td></tr>";
 

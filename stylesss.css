@@ -538,6 +538,7 @@ body {
 .rentalgroup-wrap{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .rental-group {
@@ -665,12 +666,14 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  background-color: #f8f8f8;
  
   margin: 20px;
   width: 80%; 
   
+}
+
+.aboout__grid h1{
+  background-color: none;
 }
 
 table {
@@ -687,7 +690,7 @@ th, td {
 }
 
 th {
-  background-color: #007BFF; 
+  background-color: #5d5fef; 
   color: white;
   font-weight: bold;
 }

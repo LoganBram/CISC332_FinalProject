@@ -43,9 +43,7 @@
         <?php
         include 'assist_displaygroups.php';
         ?>
-        <form action="">
-          
-        </form>
+      
     </div>
     
 
