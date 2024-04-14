@@ -32,7 +32,7 @@
         <h2>Assign Manager to Property</h2>
         <form action="submit_managerassignment.php" method="post">
             <div class="form-group">
-                <label for="property">Property ID:</label>
+                <label for="property">Property:</label>
                 <select name="property" id="property">
                     <?php
                     include 'connectdb.php';  // Ensure your DB connection file is correctly referenced

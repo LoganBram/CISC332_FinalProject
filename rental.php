@@ -6,7 +6,7 @@
     
     <link rel="stylesheet" href="stylesss.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Web Design Mastery | Holux</title>
+    
   </head>
   <body>
   <?php
